@@ -1,0 +1,9 @@
+
+ import 'dart:ui';
+
+class MyColors {
+  static const   primary = 0xFFE2BE7F;
+  static const black = 0xFF202020;
+  static const white = 0xFFFFFFFF;
+  static const Color darkPrimary = Color(0x99202020);
+}

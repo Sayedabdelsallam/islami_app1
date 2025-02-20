@@ -11,7 +11,7 @@ import 'widget/custom_tap_bar_item.dart';
 import 'widget/radio_item.dart';
 
 class RadioScreen extends StatefulWidget {
-   RadioScreen({super.key});
+  const RadioScreen({super.key});
 
   @override
   State<RadioScreen> createState() => _RadioScreenState();

@@ -16,7 +16,7 @@ class RecitersItem extends StatefulWidget {
 class _RadioItemState extends State<RecitersItem> {
 
   String? url;
-
+  @override
   initState() {
     getUrl();
     super.initState();

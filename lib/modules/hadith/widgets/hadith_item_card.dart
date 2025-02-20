@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:islami_app/models/hadith_data.dart';
 import 'package:islami_app/shared/colors.dart';
 

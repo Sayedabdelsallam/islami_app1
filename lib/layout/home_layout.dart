@@ -7,7 +7,7 @@ import 'package:islami_app/modules/times/times_screen.dart';
 import 'package:islami_app/shared/colors.dart';
 
 class HomeLayout extends StatefulWidget {
-  HomeLayout({super.key});
+  const HomeLayout({super.key});
   static const String routeName = 'home';
 
   @override

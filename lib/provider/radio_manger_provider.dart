@@ -3,25 +3,28 @@ import 'package:flutter/material.dart';
 
 class RadioMangerProvider extends ChangeNotifier {
   String? _currentPlayingUrl;
-  bool isPlaying = false;
+  bool _isPlaying = false;
   final AudioPlayer _player = AudioPlayer();
   double? _currentVolume = 2.0;
 
   String? get currentPlayingUrl => _currentPlayingUrl;
+  bool? get isPlaying => _isPlaying;
+  double? get currentVolume => _currentVolume;
 
   /// play
   Future<void> play(String url) async {
     if (_currentPlayingUrl == url) {
-      isPlaying ? await _player.pause() : await _player.resume();
-      isPlaying = !isPlaying;
+      _isPlaying ? await _player.pause() : await _player.resume();
+      _isPlaying = !_isPlaying;
     } else {
       await _player.stop();
       _currentPlayingUrl = url;
+
       await _player.play(
         UrlSource(url),
         volume: _currentVolume,
       );
-      isPlaying = true;
+      _isPlaying = true;
     }
     notifyListeners();
   }
@@ -31,7 +34,7 @@ class RadioMangerProvider extends ChangeNotifier {
   Future<void> stop() async {
     await _player.stop();
     _currentPlayingUrl = null;
-    isPlaying = false;
+    _isPlaying = false;
     notifyListeners();
   }
 

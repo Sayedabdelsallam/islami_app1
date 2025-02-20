@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:islami_app/api/api_manger.dart';
 import 'package:islami_app/models/radio_response_model.dart';
+import 'package:islami_app/models/reciters_response_model.dart';
+import 'package:islami_app/modules/radio/widget/reciters_item.dart';
 
 import '../../shared/colors.dart';
 import 'widget/custom_tap_bar_item.dart';
@@ -65,7 +67,8 @@ class _RadioScreenState extends State<RadioScreen> {
           ],
         ),
       ),
-          Expanded(
+          selectedTab == 0
+              ? Expanded(
             child: FutureBuilder(
               future: ApiManger.getRadioData(),
               builder: (context, snapshot) {
@@ -97,7 +100,40 @@ class _RadioScreenState extends State<RadioScreen> {
                 }
               },
             ),
-          ),
+          )
+              : Expanded(
+            child: FutureBuilder(
+              future: ApiManger.getRecitersData(),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator(
+                    color: MyColors.primary,
+                  ));
+                } else if (snapshot.hasError) {
+                  return Column(
+                    children: [
+                      ElevatedButton(onPressed: ()
+                      {
+                        ApiManger.getRadioData();
+                        setState(() {
+                        });
+                      },
+                        child: Text('Error: ${snapshot.error}'),),
+                    ],
+                  );
+                } else {
+                  log(snapshot.data.toString());
+                  RecitersResponseModel recitersData = snapshot.data!;
+                  return  ListView.builder(
+                    itemCount: recitersData.reciters!.length,
+                    itemBuilder: (context, index) => RecitersItem(
+                       recitersModel : recitersData.reciters![index] ,
+                    ),
+                  );
+                }
+              },
+            ),
+          )
         ],
       ),
     );

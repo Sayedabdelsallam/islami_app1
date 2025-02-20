@@ -1,19 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/models/reciters_response_model.dart';
 import 'package:islami_app/provider/radio_manger_provider.dart';
 import 'package:provider/provider.dart';
-import '../../../models/radio_response_model.dart';
 import '../../../shared/colors.dart';
 
-class RadioItem extends StatefulWidget {
-  const RadioItem({super.key, required this.model,});
+class RecitersItem extends StatefulWidget {
+  const RecitersItem({super.key, required this.recitersModel,});
 
-  final RadiosItemEntity model;
+  final RecitersItemEntity recitersModel;
 
   @override
-  State<RadioItem> createState() => _RadioItemState();
+  State<RecitersItem> createState() => _RadioItemState();
 }
 
-class _RadioItemState extends State<RadioItem> {
+class _RadioItemState extends State<RecitersItem> {
+
+  String? url;
+
+  initState() {
+    getUrl();
+    super.initState();
+  }
+
+  void getUrl()
+  {
+    url = "${widget.recitersModel.moshaf![0].server}112.mp3";
+  }
+
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -41,10 +54,18 @@ class _RadioItemState extends State<RadioItem> {
           child: Column(
             children: [
               Text(
-                '${widget.model.name}',
+                '${widget.recitersModel.name}',
                 style: TextStyle(
                   color: MyColors.black,
                   fontSize: size.height * 0.025,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              Text(
+                '${widget.recitersModel.moshaf![0].name}',
+                style: TextStyle(
+                  color: MyColors.black,
+                  fontSize: size.height * 0.015,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -54,10 +75,10 @@ class _RadioItemState extends State<RadioItem> {
                 children: [
                   IconButton(
                     onPressed: () {
-                      provider.play(widget.model.url! );
+                      provider.play(url!);
                     },
                     icon: Icon(
-                      (provider.currentPlayingUrl == widget.model.url && provider.isPlaying == true)
+                      (provider.currentPlayingUrl == url && provider.isPlaying == true)
                           ?Icons.pause : Icons.play_arrow_rounded,
                       color: MyColors.black,
                       size: size.height * 0.05,
@@ -65,7 +86,7 @@ class _RadioItemState extends State<RadioItem> {
                   ),
                   IconButton(
                     onPressed: () {
-                      if(provider.currentPlayingUrl == widget.model.url)
+                      if(provider.currentPlayingUrl == url)
                       {provider.stop();}
                     },
                     icon: Icon(

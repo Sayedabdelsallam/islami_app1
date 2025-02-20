@@ -17,6 +17,9 @@ dependencies:
   smooth_page_indicator: ^1.2.0+3
   carousel_slider: ^5.0.0
   shared_preferences: ^2.4.0
+  http: ^1.3.0
+  audioplayers: ^6.2.0
+  provider: ^6.1.2
 
 
 dev_dependencies:
@@ -167,9 +170,11 @@ flutter:
     - assets/images/onBoardingCenter.png
     - assets/images/onBoardingTop.png
     - assets/images/quran_bk.png
+    - assets/images/radioBG.png
     - assets/images/radio_bk.png
     - assets/images/sebhaTop.png
     - assets/images/sebha_bk.png
+    - assets/images/soundOn.png
     - assets/images/splash/GlowTop.png
     - assets/images/splash/Islami.png
     - assets/images/splash/LeftShape.png

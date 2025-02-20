@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/models/recent_data.dart';
 import 'package:islami_app/models/sura_data.dart';
 import 'package:islami_app/modules/quran/quran_details_view.dart';
 import 'package:islami_app/modules/quran/widget/sura_card_widget.dart';
@@ -10,7 +9,7 @@ import 'package:islami_app/shared/shared_pref_keys.dart';
 import 'widget/recent_card_widget.dart';
 
 class QuranScreen extends StatefulWidget {
-  QuranScreen({
+  const QuranScreen({
     super.key,
   });
 

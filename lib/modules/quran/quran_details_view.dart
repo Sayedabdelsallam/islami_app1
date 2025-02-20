@@ -4,7 +4,7 @@ import 'package:islami_app/models/sura_data.dart';
 import 'package:islami_app/shared/colors.dart';
 
 class QuranDetailsView extends StatefulWidget {
-  QuranDetailsView({super.key,required this.suraData});
+ const QuranDetailsView({super.key,required this.suraData});
   static const String routeName = 'quranDetails';
   final SuraData suraData;
 

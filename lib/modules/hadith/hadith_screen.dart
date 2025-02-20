@@ -4,10 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:islami_app/models/hadith_data.dart';
 import 'package:islami_app/modules/hadith/widgets/hadith_item_card.dart';
 
-import '../../models/sura_data.dart';
-
 class HadithScreen extends StatefulWidget {
-   HadithScreen({super.key});
+  const HadithScreen({super.key});
 
   @override
   State<HadithScreen> createState() => _HadithScreenState();

@@ -5,6 +5,7 @@ import 'package:islami_app/shared/shared_pref.dart';
 import 'package:islami_app/shared/shared_pref_keys.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import '../../res/font_res.dart';
 import '../../shared/colors.dart';
 
 class OnBoardingScreen extends StatefulWidget {
@@ -110,6 +111,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       'Back',
                       style: TextStyle(
                           color: MyColors.primary,
+                          fontFamily: FontRes.janna,
                           fontSize: 16,
                         fontWeight: FontWeight.bold
                       ),
@@ -142,6 +144,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       currentIndex == items.length - 1 ? 'Finish' : 'Next',
                       style: TextStyle(
                           color: MyColors.primary,
+                          fontFamily: FontRes.janna,
                           fontSize: 16,
                           fontWeight: FontWeight.bold
                       ),

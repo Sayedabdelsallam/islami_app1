@@ -6,6 +6,7 @@ import 'package:islami_app/shared/colors.dart';
 import 'package:islami_app/shared/shared_pref.dart';
 import 'package:islami_app/shared/shared_pref_keys.dart';
 
+import '../../res/font_res.dart';
 import 'widget/recent_card_widget.dart';
 
 class QuranScreen extends StatefulWidget {
@@ -251,10 +252,10 @@ class _QuranScreenState extends State<QuranScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Text('Most Recent',
                       style: TextStyle(
-                        fontFamily: 'Janna',
                         color: MyColors.white,
                         fontSize: size.height * 0.02,
                         fontWeight: FontWeight.w700,
+                        fontFamily: FontRes.janna,
                       )),
                 ),
                 SizedBox(
@@ -280,7 +281,7 @@ class _QuranScreenState extends State<QuranScreen> {
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Text('Suras List',
                       style: TextStyle(
-                        fontFamily: 'Janna',
+                        fontFamily: FontRes.janna,
                         color: MyColors.white,
                         fontSize: size.height * 0.02,
                         fontWeight: FontWeight.w700,

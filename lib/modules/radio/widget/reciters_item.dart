@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_app/models/reciters_response_model.dart';
 import 'package:islami_app/provider/radio_manger_provider.dart';
 import 'package:provider/provider.dart';
+import '../../../res/font_res.dart';
 import '../../../shared/colors.dart';
 
 class RecitersItem extends StatefulWidget {
@@ -59,6 +60,7 @@ class _RadioItemState extends State<RecitersItem> {
                   color: MyColors.black,
                   fontSize: size.height * 0.025,
                   fontWeight: FontWeight.w700,
+                  fontFamily: FontRes.janna,
                 ),
               ),
               Text(
@@ -67,6 +69,7 @@ class _RadioItemState extends State<RecitersItem> {
                   color: MyColors.black,
                   fontSize: size.height * 0.015,
                   fontWeight: FontWeight.w700,
+                  fontFamily: FontRes.janna,
                 ),
               ),
               Spacer(),

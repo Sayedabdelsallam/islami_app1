@@ -1388,7 +1388,9 @@
 //   static const String QURANDTLEFT = 'assets/images/QuranDtLeft.png';
 //   static const String QURANDTRGHT = 'assets/images/QuranDtRght.png';
 //   static const String SEBHABODY = 'assets/images/SebhaBody.png';
+//   static const String EVENING_AZKAR = 'assets/images/evening_azkar.png';
 //   static const String HADITH_BK = 'assets/images/hadith_bk.png';
+//   static const String MORNING_AZKAR = 'assets/images/morning_azkar.png';
 //   static const String MOST_RECENT_BK = 'assets/images/most_recent_bk.png';
 //   static const String OBC2 = 'assets/images/oBc2.png';
 //   static const String OBC3 = 'assets/images/oBc3.png';
@@ -1399,8 +1401,10 @@
 //   static const String QURAN_BK = 'assets/images/quran_bk.png';
 //   static const String RADIOBG = 'assets/images/radioBG.png';
 //   static const String RADIO_BK = 'assets/images/radio_bk.png';
+//   static const String SALLAH_TIME = 'assets/images/sallah_time.png';
 //   static const String SEBHATOP = 'assets/images/sebhaTop.png';
 //   static const String SEBHA_BK = 'assets/images/sebha_bk.png';
+//   static const String SOUNDON = 'assets/images/soundOn.png';
 //   static const String GLOWTOP = 'assets/images/splash/GlowTop.png';
 //   static const String ISLAMI = 'assets/images/splash/Islami.png';
 //   static const String LEFTSHAPE = 'assets/images/splash/LeftShape.png';
@@ -1410,5 +1414,6 @@
 //   static const String ROUTEGOLD = 'assets/images/splash/routegold.png';
 //   static const String SPLASHBK = 'assets/images/splash/splashBk.png';
 //   static const String SURA_DT_BK = 'assets/images/sura_dt_bk.png';
+//   static const String TIME_BG = 'assets/images/time_bg.png';
 //   static const String TIMES_BK = 'assets/images/times_bk.png';
 // }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app/models/sura_data.dart';
+import 'package:islami_app/res/font_res.dart';
 import 'package:islami_app/shared/colors.dart';
 
 class QuranDetailsView extends StatefulWidget {
@@ -34,7 +35,7 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
         title: Text(
           widget.suraData.suraNameEn,
           style: TextStyle(
-            fontFamily: 'Janna',
+            fontFamily: FontRes.janna,
             color: MyColors.primary,
             fontSize: size.height * 0.025,
             fontWeight: FontWeight.bold,
@@ -89,7 +90,7 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
                   Text(
                     widget.suraData.suraNameAr,
                     style: TextStyle(
-                      fontFamily: 'Janna',
+                      fontFamily: FontRes.janna,
                       color: MyColors.primary,
                       fontSize: size.height * 0.03,
                       fontWeight: FontWeight.bold,
@@ -106,7 +107,7 @@ class _QuranDetailsViewState extends State<QuranDetailsView> {
                         '[${index + 1}] ${versesList[index]} ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontFamily: 'Janna',
+                          fontFamily: FontRes.janna,
                           color: MyColors.primary,
                           fontSize: size.height * 0.027,
                           fontWeight: FontWeight.bold,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../res/font_res.dart';
 import '../../../shared/colors.dart';
 
 class CustomTapBarItem extends StatelessWidget {
@@ -33,6 +34,7 @@ class CustomTapBarItem extends StatelessWidget {
               color: isSelected ? MyColors.black : MyColors.white,
               fontSize: size.height * 0.02,
               fontWeight: FontWeight.w700,
+              fontFamily: FontRes.janna,
             ),
           ),
         ),

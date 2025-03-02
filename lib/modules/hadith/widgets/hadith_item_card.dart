@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islami_app/models/hadith_data.dart';
 import 'package:islami_app/shared/colors.dart';
 
+import '../../../res/font_res.dart';
+
 class HadithItemCard extends StatelessWidget {
   const HadithItemCard({super.key, required this.hadithData});
   final HadithData hadithData;
@@ -31,7 +33,7 @@ class HadithItemCard extends StatelessWidget {
           Text(
             hadithData.title,
             style: TextStyle(
-              fontFamily: "Janna",
+              fontFamily: FontRes.janna,
               color: MyColors.black,
               fontSize: size.height * 0.025,
               fontWeight: FontWeight.bold,
@@ -46,8 +48,7 @@ class HadithItemCard extends StatelessWidget {
                     hadithData.content,
                     textAlign:  TextAlign.center,
                     style: TextStyle(
-                      fontFamily: "Janna",
-                      color: MyColors.black,
+                      fontFamily: FontRes.janna,                      color: MyColors.black,
                       fontSize: size.height * 0.02,
                       fontWeight: FontWeight.bold,
                     ),

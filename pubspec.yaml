@@ -161,7 +161,9 @@ flutter:
     - assets/images/QuranDtLeft.png
     - assets/images/QuranDtRght.png
     - assets/images/SebhaBody.png
+    - assets/images/evening_azkar.png
     - assets/images/hadith_bk.png
+    - assets/images/morning_azkar.png
     - assets/images/most_recent_bk.png
     - assets/images/oBc2.png
     - assets/images/oBc3.png
@@ -172,6 +174,7 @@ flutter:
     - assets/images/quran_bk.png
     - assets/images/radioBG.png
     - assets/images/radio_bk.png
+    - assets/images/sallah_time.png
     - assets/images/sebhaTop.png
     - assets/images/sebha_bk.png
     - assets/images/soundOn.png
@@ -184,6 +187,7 @@ flutter:
     - assets/images/splash/routegold.png
     - assets/images/splash/splashBk.png
     - assets/images/sura_dt_bk.png
+    - assets/images/time_bg.png
     - assets/images/times_bk.png
   fonts:
     - family: Janna-LT-Bold

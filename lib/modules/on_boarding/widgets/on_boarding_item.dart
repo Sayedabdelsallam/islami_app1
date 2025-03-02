@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/shared/colors.dart';
 
+import '../../../res/font_res.dart';
+
 class OnBoardingItem extends StatelessWidget {
   const OnBoardingItem(
       {super.key,
@@ -25,6 +27,7 @@ class OnBoardingItem extends StatelessWidget {
           title,
           style: TextStyle(
             color: MyColors.primary,
+            fontFamily: FontRes.janna,
             fontSize: size.height * 0.03,
             fontWeight: FontWeight.w700,
           ),
@@ -36,6 +39,7 @@ class OnBoardingItem extends StatelessWidget {
           description,
           style: TextStyle(
             color: MyColors.primary,
+            fontFamily: FontRes.janna,
             fontSize: 20,
             fontWeight: FontWeight.w700,
           ),

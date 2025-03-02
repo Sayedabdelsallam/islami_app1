@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/shared/colors.dart';
 
+import '../../res/font_res.dart';
+
 class SebhaScreen extends StatefulWidget {
   const SebhaScreen({super.key});
 
@@ -43,7 +45,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
               fontSize: size.height * 0.04,
               fontWeight: FontWeight.bold,
               color: MyColors.white,
-              fontFamily: 'Janna',
+              fontFamily: FontRes.janna,
             ),
           ),
           SizedBox(
@@ -84,7 +86,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
                           fontSize: size.height * 0.04,
                           fontWeight: FontWeight.bold,
                           color: MyColors.white,
-                          fontFamily: 'Janna'
+                        fontFamily: FontRes.janna,
                       ),
                     ),
                     SizedBox(
@@ -97,7 +99,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
                           fontSize: size.height * 0.04,
                           fontWeight: FontWeight.bold,
                           color: MyColors.white,
-                          fontFamily: 'Janna'
+                        fontFamily: FontRes.janna,
                       ),
                     ),
                   ],
